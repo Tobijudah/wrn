@@ -1,0 +1,164 @@
+#hero {
+  background-image: url(../img/hero-image.svg); 
+  background-position: right;
+  color: #fff;
+  margin: 1.25rem 0;
+  padding: 1.5rem 2.6875rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#hero h3 {
+  margin: 0.8125rem 0;
+  font-size: 1.5rem;
+}
+
+#hero-text {
+  width: 70%;
+}
+
+#mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.25rem 0;
+}
+
+.mini-card {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #27750A;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+
+.mini-card p {
+  padding-top: 0.25rem;
+}
+
+#card-1 {
+  background-color: #EFEBBE;
+}
+
+#card-2 {
+  background-color: #E1EAA9;
+}
+
+#card-3 {
+  background-color: #F8CD8D;
+}
+
+#content {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(199, 237, 187, 0.44);
+  border: none;
+  border-radius: 10px;
+  padding: 2.25rem 2.45rem;
+  margin-bottom: 5rem;
+}
+
+.court-content {
+  margin-bottom: 3.125rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.header h4 {
+  font-size: 1.125rem;
+  color: #27750A;
+  font-weight: 700;
+}
+
+.btn {
+  cursor: pointer;
+  background: #27750A;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1.4rem;
+}
+
+.court-item {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 1.125rem 0;
+}
+
+.sub-text {
+  color: #CEBF09;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+.right-align {
+  margin-left: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .mobile-sub-text {
+    font-size: 0.75rem;
+  }
+
+  #hero {
+    background-image: url(../img/hero-image-mobile.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0.6875rem 1.3125rem;
+    font-size: 0.875rem;
+  }
+
+  #hero h3 {
+    margin: 0.1875rem 0;
+    font-size: 1.125rem;
+  }
+  
+  #hero-text {
+    width: 80%;
+  }
+
+  #mini-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  .mini-card {
+    width: 100%;
+  }
+
+  .mini-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #content {
+    padding: 0;
+    box-shadow: none;
+    margin-top: 3rem;
+  }
+
+  .btn {
+    padding: 0.72rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .court-item .text {
+    margin: 0 0.5rem;
+  }
+
+}

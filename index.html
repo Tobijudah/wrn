@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Dashboard | WRN</title>
+  </head>
+
+  <body>
+    
+    <div class="container">
+
+      <div id="sidebar">
+        <a href="#" id="brand">
+          <img src="assets/img/logo.svg" alt="">
+        </a>
+        <ul id="side-nav-items">
+          <div class="active-div">
+            <li><a href="#" class="active"><img src="assets/img/dashboard.svg" alt="">Dashboard</a></li>
+          </div>
+
+          <li>
+            <a href="#"><img src="assets/img/judgement.svg" alt="">Judgement</a>
+            <img id="drop-down" src="assets/img/drop-down.svg" alt="">
+            <div id="sub-nav-items">
+              <a class="sub-nav-item" href="#">Judgement</a>
+              <a class="sub-nav-item" href="#">Judgement</a>
+            </div>
+          </li>
+          <li><a href="#"><img src="assets/img/WRN-indexes.svg" alt="">WRN Indexes</a></li>
+          <li><a href="#"><img src="assets/img/Civil-Procedure-Rules.svg" alt="">Civil Procedure Rules</a></li>
+          <li><a href="#"><img src="assets/img/Constitution.svg" alt="">Constitution</a></li>
+          <li><a href="#"><img src="assets/img/Law-Dictionary.svg" alt="">Law Dictionary</a></li>
+          <li><a href="#"><img src="assets/img/Laws-of-the-Federation.svg" alt="">Laws of the Federation</a></li>
+          <li><a href="#"><img src="assets/img/Blogs-Articles.svg" alt="">Blogs / Articles</a></li>
+          <li><a href="#"><img src="assets/img/Notes.svg" alt="">Notes</a></li>
+          <li><a href="#"><img src="assets/img/Subscriptions.svg" alt="">Subscriptions</a></li>
+        </ul>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+      <div id="main">
+        <nav>
+          <div class="inner-container">
+            <div id="nav-items">
+              <img class="mobile-only" id="sidenav-icon" src="assets/img/sidebar-icon.svg" alt="">
+              <form class="desktop-only">
+                <div class="input">
+                  <input type="text" name="search" id="search" placeholder="search by case title">
+                </div>
+              </form>
+              <div id="right-nav-items">
+                <img src="assets/img/logo-mobile.svg" alt="" class="mobile-only" id="mobile-logo">
+                <img class="desktop-only" src="assets/img/notification.svg" alt="">
+                <img class="mobile-only" src="assets/img/notification-mobile.svg" alt="">
+                <div id="profile">
+                  <img class="desktop-only" src="assets/img/user-image.png" alt="">
+                  <img class="mobile-only" src="assets/img/user-image-mobile.png" alt="">
+                  <div class="text">
+                    <p>John Doe</p>
+                    <p>Lawyer</p>
+                  </div>
+                  <img src="assets/img/drop-down.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <form class="mobile-only">
+              <div class="input">
+                <input type="text" name="search" id="search" placeholder="search by case title">
+              </div>
+            </form>
+          </div>
+        </nav>
+
+        <div id="body">
+          <div class="inner-container">
+
+            <div id="hero">
+              <div id="hero-text">
+                <p>Hello John</p>
+                <h3>Welcome to WRN</h3>
+                <p class="mobile-sub-text">All about WRN will be updated here for recent cases and articles, click on search to search for related cases by title.</p>
+              </div>
+            </div> 
+
+            <div id="mini-grid">
+
+              <div class="mini-grid-item">
+                <div class="mini-card" id="card-1">
+                  <img src="assets/img/store.png" alt="">
+                  <p>Store</p>
+                </div>
+              </div>
+              
+              <div class="mini-grid-item">
+                <div class="mini-card" id="card-2">
+                  <img src="assets/img/features.png" alt="">
+                  <p>Features</p>
+                </div>
+              </div>
+              
+              <div class="mini-grid-item">
+                <div class="mini-card" id="card-3">
+                  <img src="assets/img/bookmarks.png" alt="">
+                  <p>Bookmarks</p>
+                </div>
+              </div>
+
+            </div>
+            
+            <div id="content">
+
+              <div id="supreme-court-content" class="court-content">
+                <div class="header">
+                  <h4>SUPREME COURT</h4>
+                  <button class="btn">View More</button>                  
+                </div>
+
+                <ul id="court-items">
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>PROF. STEVE TORKUMA UGBA vs GABRIEL TORWUA SUSWAN</p>
+                      <p class="sub-text">9th May, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>OBA GABRIEL ADEKUNLE AROMOLARAN vs DR. (REV.) ROLAND OLAPADE AGORO</p>
+                      <p class="sub-text">28th Nov, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>PROF. STEVE TORKUMA UGBA vs GABRIEL TORWUA SUSWAN</p>
+                      <p class="sub-text">9th May, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>OBA GABRIEL ADEKUNLE AROMOLARAN vs DR. (REV.) ROLAND OLAPADE AGORO</p>
+                      <p class="sub-text">28th Nov, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                </ul>
+              </div>
+
+              <div id="appeal-court-content" class="court-content">
+                <div class="header">
+                  <h4>Court of Appeal</h4>
+                  <button class="btn">View More</button>                  
+                </div>
+
+                <ul id="court-items">
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>PROF. STEVE TORKUMA UGBA vs GABRIEL TORWUA SUSWAN</p>
+                      <p class="sub-text">9th May, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>OBA GABRIEL ADEKUNLE AROMOLARAN vs DR. (REV.) ROLAND OLAPADE AGORO</p>
+                      <p class="sub-text">28th Nov, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>PROF. STEVE TORKUMA UGBA vs GABRIEL TORWUA SUSWAN</p>
+                      <p class="sub-text">9th May, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                  <li class="court-item">
+                    <img class="desktop-only" src="assets/img/item-icon.svg" alt="">
+                    <img class="mobile-only" src="assets/img/item-icon-mobile.svg" alt="">
+                    <div class="text">
+                      <p>OBA GABRIEL ADEKUNLE AROMOLARAN vs DR. (REV.) ROLAND OLAPADE AGORO</p>
+                      <p class="sub-text">28th Nov, 2014</p>
+                    </div>
+                    <img src="assets/img/bookmark-icon.svg" alt="" class="right-align">
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+
+          </div>          
+        </div>
+      </div>
+
+    </div>
+
+  <script src="assets/js/app.js"></script>
+  </body>
+
+</html>
