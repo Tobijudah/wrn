@@ -3,10 +3,8 @@ const sidebar = document.getElementById('sidebar')
 const overlayDiv = document.getElementById('overlay')
 let sidebarOpen = false
 
-const sidebarControl = () => {
+const openSidebar = () => {
 
-  sidebar.style.transform = 'translateX(-245px)'
-  
   sidenavBtn.addEventListener('click', e => {
   
     e.stopPropagation()
@@ -22,7 +20,11 @@ const sidebarControl = () => {
     sidebarOpen = true
   
   })
-  
+
+}
+
+const closeSidebar = () => {
+
   overlayDiv.addEventListener('click', e => {
   
     if (sidebarOpen) {
@@ -43,6 +45,16 @@ const sidebarControl = () => {
 
 }
 
+const sidebarControl = () => {
+
+  sidebar.style.transform = 'translateX(-245px)'
+  
+  openSidebar()
+  
+  closeSidebar()
+
+}
+
 const reset = () => {
   
   overlayDiv.style.opacity = 0
@@ -60,11 +72,11 @@ if (window.innerWidth <= 800) {
 }
 
 window.addEventListener('resize', e => {
+
+  reset()
   
   if (window.innerWidth <= 800) {
     sidebarControl()
-  } else {
-    reset()
   }
 
 })
