@@ -252,6 +252,14 @@ input::placeholder {
     transition: transform 0.5s;
   }
 
+  #brand {
+    display: none;
+  }
+
+  #side-nav-items {
+    margin-top: 2.25rem;
+  }
+
   #sidenav-icon {
     display: block !important;
     margin-right: 1rem;
