@@ -80,3 +80,14 @@ window.addEventListener('resize', e => {
   }
 
 })
+
+
+const dropdownBtn = document.getElementById('drop-down')
+
+dropdownBtn.addEventListener('click', e => {
+
+  const subNavItems = document.getElementById('sub-nav-items')
+  subNavItems.classList.toggle('show')
+  e.target.classList.toggle('turn')
+
+})

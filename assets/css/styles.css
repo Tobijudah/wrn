@@ -71,7 +71,7 @@ a {
   margin-top: 2.75rem;
 }
 
-#side-nav-items li {
+#side-nav-items > div {
   position: relative;
   border-bottom: 1px solid #CCD1D9;
   padding-left: 1.275rem;
@@ -98,6 +98,11 @@ a {
   right: 1rem;
   top: 1rem;
   margin: 0;
+}
+
+#sub-nav-items {
+  opacity: 0;
+  max-height: 0;
 }
 
 #sub-nav-items a.sub-nav-item {
@@ -221,6 +226,17 @@ input::placeholder {
   z-index:-1;
   opacity: 0;
   transition: opacity 0.5s;
+}
+
+#sub-nav-items.show {
+  opacity: 1;
+  max-height: 90px;
+  transition: max-height 0.3s;
+}
+
+#drop-down.turn {
+  transform: rotateX(180deg);
+  transition: transform 0.3s;
 }
 
 
