@@ -1,0 +1,75 @@
+#page-heading {
+  text-align: center;
+  background: #69C448;
+  color: #fff;
+  width: 100%;
+  padding: 2.125rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+#page-heading p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 2.3125rem 0;
+  column-gap: 5.26%;
+}
+
+.court-content {
+  background-color: #fff;
+  padding: 2.6875rem 2.3125rem 5rem 1.375rem;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(199, 237, 187, 0.38);
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: 1.125rem;
+  color: #27750A;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #DADADA;
+}
+
+.court-item {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 1.125rem 0;
+}
+
+.sub-text {
+  color: #CEBF09;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+.right-align {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #page-heading {
+    margin-top: 1rem;
+  }
+
+  #content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .court-item {
+    padding: 0.675rem 0;
+  }
+
+  .court-item .text {
+    margin: 0 0.5rem;
+  }
+
+}
